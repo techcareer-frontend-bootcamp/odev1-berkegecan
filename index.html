@@ -1,38 +1,86 @@
-
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-   <meta charset="utf-8" /> 
-   <meta name=”viewport” content=”width=device-width, initial-scale=1.0”> 
-   <title>HTML5 EĞİTİMLERİ</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Odev</title>
 
-   <style type="text/css">
-     body {
-       max-width: 1200px;
-       margin: auto;
+  <style type="text/css">
+    body {
+      max-width: 1200px;
+      margin: auto;
+    }
+    header, nav, section, article, footer {
+     border: 1px solid grey;
+     margin: 25px;
+     padding: 10px;
+    }
+
+    nav ul li { 
+      display: inline; 
      }
-     header, nav, section, article, footer {
-      border: 1px solid grey;
-      margin: 25px;
-      padding: 10px;
-     }
-
-     nav ul li,
-     nav ol li { 
-       display: inline; 
-      }
-   </style>
-
+  </style>
 </head>
-
 <body>
+  <!-- Başlık -->
+  <header>
+    <h1>HTML İSKELET YAPISI</h1>
+  </header>
 
-  <!-- Header  -->  
-  <!-- Menu  --> 
- 
-  <!-- Content  --> 
+  <!-- Menü -->
+  <nav>
+    <ul>
+      <li><a href="#">Anasayfa</a></li>
+      <li><a href="#">Hakkımızda</a></li>
+      <li><a href="#">Kalite</a></li>
+      <li><a href="#">İletişim</a></li>
+    </ul>
+  </nav>
 
-  <!-- Footer  -->  
+  <!-- Ana İçerik -->
+  <main>
+    <!-- Ülkeler Bölümü -->
+    <section>
+      <h2>Ünlü Ülkeler</h2>
 
+      <article>
+        <h3>Türkiye</h3>
+        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, enim aliquid.</i> <u>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, odit veniam.</u></p>
+      </article>
+
+      <article>
+        <h3>İrlanda</h3>
+        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, enim aliquid.</i> <u>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, odit veniam.</u></p>
+      </article>
+    </section>
+
+    <!-- İletişim -->
+    <section>
+      <h2>Contact</h2>
+      <form action="#">
+        <label for="">Kullanıcı Adı: </label>
+        <input type="text" placeholder="Zorunlu Alan" required>
+
+        <label for="">Mail: </label>
+        <input type="email" placeholder="Zorunlu Alan" required>
+
+        <label for="">Konu: </label>
+        <input type="text" placeholder="Zorunlu Alan" required>
+
+        <label for="">Konu: </label>
+        <input type="checkbox" required>
+
+        <button type="reset">Temizle</button>
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2022 Tüm hakları saklıdır.</p>
+  </footer>
+  
 </body>
 </html>
